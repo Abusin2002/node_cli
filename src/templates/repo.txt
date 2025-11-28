@@ -1,0 +1,23 @@
+const <Name> = require("../models/<name>.model");
+
+module.exports = {
+  getAll: async () => {
+    return await <Name>.find();
+  },
+
+  getById: async (id) => {
+    return await <Name>.findById(id);
+  },
+
+  create: async (data) => {
+    return await <Name>.create(data);
+  },
+
+  update: async (id, data) => {
+    return await <Name>.findByIdAndUpdate(id, data, { new: true });
+  },
+
+  remove: async (id) => {
+    return await <Name>.findByIdAndDelete(id);
+  },
+};
