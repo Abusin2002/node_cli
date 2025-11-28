@@ -1,0 +1,13 @@
+const <name>Repository = require("../repositories/<name>.repository");
+
+module.exports = {
+  getAll: () => <name>Repository.getAll(),
+
+  getById: (id) => <name>Repository.getById(id),
+
+  create: (data) => <name>Repository.create(data),
+
+  update: (id, data) => <name>Repository.update(id, data),
+
+  remove: (id) => <name>Repository.remove(id),
+};
