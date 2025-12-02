@@ -18,7 +18,7 @@ process.on('SIGINT',()=>{
 });
 
 async function initProject() {
-    log("\n Welcome to ABU Init Wizard \n","success");
+    log("Welcome to ABU Init Wizard \n","success");
 
     const answers=await inquirer.prompt(PROMPT)
 
